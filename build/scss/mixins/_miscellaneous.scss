@@ -8,8 +8,8 @@
 }
 
 // Different radius each side
-@mixin border-radius-sides($top-left, $top-right, $bottom-left, $bottom-right) {
-  border-radius: $top-left $top-right $bottom-left $bottom-right;
+@mixin border-radius-sides($top-right, $top-left, $bottom-right, $bottom-left) {
+  border-radius: $top-right $top-left $bottom-right $bottom-left;
 }
 
 @mixin calc($property, $expression) {
@@ -27,6 +27,6 @@
 // Gradient background
 @mixin gradient($color: #f5f5f5, $start: #eee, $stop: $white) {
   background-color: $color;
-  background-image: gradient(linear, left bottom, left top, color-stop(0, $start), color-stop(1, $stop));
+  background-image: gradient(linear, right bottom, right top, color-stop(0, $start), color-stop(1, $stop));
 }
 

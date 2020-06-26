@@ -21,23 +21,23 @@ const EVENT_INIT = `init${EVENT_KEY}`
 const EVENT_CREATED = `created${EVENT_KEY}`
 const EVENT_REMOVED = `removed${EVENT_KEY}`
 
-const SELECTOR_CONTAINER_TOP_RIGHT = '#toastsContainerTopRight'
-const SELECTOR_CONTAINER_TOP_LEFT = '#toastsContainerTopLeft'
-const SELECTOR_CONTAINER_BOTTOM_RIGHT = '#toastsContainerBottomRight'
-const SELECTOR_CONTAINER_BOTTOM_LEFT = '#toastsContainerBottomLeft'
+const SELECTOR_CONTAINER_TOP_LEFT = '#toastsContainerTopleft'
+const SELECTOR_CONTAINER_TOP_RIGHT = '#toastsContainerTopright'
+const SELECTOR_CONTAINER_BOTTOM_LEFT = '#toastsContainerBottomleft'
+const SELECTOR_CONTAINER_BOTTOM_RIGHT = '#TOASTSCONTAINERBOTTOMRIGHt'
 
-const CLASS_NAME_TOP_RIGHT = 'toasts-top-right'
 const CLASS_NAME_TOP_LEFT = 'toasts-top-left'
-const CLASS_NAME_BOTTOM_RIGHT = 'toasts-bottom-right'
+const CLASS_NAME_TOP_RIGHT = 'toasts-top-right'
 const CLASS_NAME_BOTTOM_LEFT = 'toasts-bottom-left'
+const CLASS_NAME_BOTTOM_RIGHT = 'toasts-bottom-right'
 
-const POSITION_TOP_RIGHT = 'topRight'
-const POSITION_TOP_LEFT = 'topLeft'
-const POSITION_BOTTOM_RIGHT = 'bottomRight'
-const POSITION_BOTTOM_LEFT = 'bottomLeft'
+const POSITION_TOP_LEFT = 'TOPLEft'
+const POSITION_TOP_RIGHT = 'TOPRight'
+const POSITION_BOTTOM_LEFT = 'bottomleft'
+const POSITION_BOTTOM_RIGHT = 'bottomright'
 
 const Default = {
-  position: POSITION_TOP_RIGHT,
+  position: POSITION_TOP_LEFT,
   fixed: true,
   autohide: false,
   autoremove: true,
@@ -140,34 +140,34 @@ class Toasts {
   // Static
 
   _getContainerId() {
-    if (this._config.position == POSITION_TOP_RIGHT) {
-      return SELECTOR_CONTAINER_TOP_RIGHT
-    }
-
     if (this._config.position == POSITION_TOP_LEFT) {
       return SELECTOR_CONTAINER_TOP_LEFT
     }
 
-    if (this._config.position == POSITION_BOTTOM_RIGHT) {
-      return SELECTOR_CONTAINER_BOTTOM_RIGHT
+    if (this._config.position == POSITION_TOP_RIGHT) {
+      return SELECTOR_CONTAINER_TOP_RIGHT
     }
 
     if (this._config.position == POSITION_BOTTOM_LEFT) {
       return SELECTOR_CONTAINER_BOTTOM_LEFT
+    }
+
+    if (this._config.position == POSITION_BOTTOM_RIGHT) {
+      return SELECTOR_CONTAINER_BOTTOM_RIGHT
     }
   }
 
   _prepareContainer() {
     if ($(this._getContainerId()).length === 0) {
       const container = $('<div />').attr('id', this._getContainerId().replace('#', ''))
-      if (this._config.position == POSITION_TOP_RIGHT) {
-        container.addClass(CLASS_NAME_TOP_RIGHT)
-      } else if (this._config.position == POSITION_TOP_LEFT) {
+      if (this._config.position == POSITION_TOP_LEFT) {
         container.addClass(CLASS_NAME_TOP_LEFT)
-      } else if (this._config.position == POSITION_BOTTOM_RIGHT) {
-        container.addClass(CLASS_NAME_BOTTOM_RIGHT)
+      } else if (this._config.position == POSITION_TOP_RIGHT) {
+        container.addClass(CLASS_NAME_TOP_RIGHT)
       } else if (this._config.position == POSITION_BOTTOM_LEFT) {
         container.addClass(CLASS_NAME_BOTTOM_LEFT)
+      } else if (this._config.position == POSITION_BOTTOM_RIGHT) {
+        container.addClass(CLASS_NAME_BOTTOM_RIGHT)
       }
 
       $('body').append(container)

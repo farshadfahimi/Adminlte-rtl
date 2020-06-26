@@ -19,7 +19,7 @@
   .content-wrapper,
   .main-footer {
     @include translate(0, 0);
-    margin-left: 0 !important;
+    margin-right: 0 !important;
     min-height: 0 !important;
   }
 
@@ -36,7 +36,7 @@
   }
 
   .invoice-col {
-    float: left;
+    float: right;
     width: 33.3333333%;
   }
 

@@ -28,7 +28,7 @@
 
   &.maximized-card {
     height: 100% !important;
-    left: 0;
+    right: 0;
     max-height: 100% !important;
     max-width: 100% !important;
     position: fixed;
@@ -77,12 +77,12 @@
     }
   }
 
-  .border-right {
-    border-right: 1px solid $card-border-color;
-  }
-
   .border-left {
     border-left: 1px solid $card-border-color;
+  }
+
+  .border-right {
+    border-right: 1px solid $card-border-color;
   }
 
   &.card-tabs {
@@ -92,7 +92,7 @@
 
         .nav-item {
           &:first-child .nav-link {
-            margin-left: -1px;
+            margin-right: -1px;
           }
         }
       }
@@ -103,8 +103,8 @@
         border-bottom: 0;
 
         &:first-child .nav-link {
-          border-left: 0;
-          margin-left: 0;
+          border-right: 0;
+          margin-right: 0;
         }
       }
     }
@@ -144,8 +144,8 @@
     .card-header {
       .nav-item {
         &:first-child .nav-link {
-          border-left: 0;
-          margin-left: 0;
+          border-right: 0;
+          margin-right: 0;
         }
       }
 
@@ -221,8 +221,8 @@ html.maximized-card {
   }
 
   > .card-tools {
-    float: right;
-    margin-right: -$card-spacer-x / 2;
+    float: left;
+    margin-left: -$card-spacer-x / 2;
 
     .input-group,
     .nav,
@@ -238,7 +238,7 @@ html.maximized-card {
 }
 
 .card-title {
-  float: left;
+  float: right;
   font-size: $card-title-font-size;
   font-weight: $card-title-font-weight;
   margin: 0;
@@ -315,8 +315,8 @@ html.maximized-card {
 
   > li {
     @media (max-width: map-get($grid-breakpoints, sm)) {
-      float: left;
-      margin-right: 10px;
+      float: right;
+      margin-left: 10px;
     }
   }
 }
@@ -341,13 +341,13 @@ html.maximized-card {
     img {
       height: $card-img-size;
       width: $card-img-size;
-      float: left;
+      float: right;
     }
   }
 
   .comment-text {
     color: lighten($gray-700, 20%);
-    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .username {
@@ -376,7 +376,7 @@ html.maximized-card {
   > li {
     @include border-radius(2px);
     background-color: $gray-100;
-    border-left: 2px solid $gray-200;
+    border-right: 2px solid $gray-200;
     color: $gray-700;
     margin-bottom: 2px;
     padding: 10px;
@@ -392,20 +392,20 @@ html.maximized-card {
     .text {
       display: inline-block;
       font-weight: 600;
-      margin-left: 5px;
+      margin-right: 5px;
     }
 
     // Time labels
     .badge {
       font-size: .7rem;
-      margin-left: 10px;
+      margin-right: 10px;
     }
 
     // Tools and options box
     .tools {
       color: theme-color("danger");
       display: none;
-      float: right;
+      float: left;
 
       // icons
       > .fa,
@@ -414,7 +414,7 @@ html.maximized-card {
       > .fab,
       > .ion {
         cursor: pointer;
-        margin-right: 5px;
+        margin-left: 5px;
       }
     }
 
@@ -439,13 +439,13 @@ html.maximized-card {
   // Color variants
   @each $name, $color in $theme-colors {
     .#{$name} {
-      border-left-color: $color;
+      border-right-color: $color;
     }
   }
 
   @each $name, $color in $colors {
     .#{$name} {
-      border-left-color: $color;
+      border-right-color: $color;
     }
   }
 
@@ -467,7 +467,7 @@ html.maximized-card {
 .card-default {
   .nav-item {
     &:first-child .nav-link {
-      border-left: 0;
+      border-right: 0;
     }
   }
 }

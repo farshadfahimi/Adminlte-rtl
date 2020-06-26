@@ -12,7 +12,7 @@
 
   //For the error number e.g: 404
   > .headline {
-    float: left;
+    float: right;
     font-size: 100px;
     font-weight: 300;
 
@@ -25,10 +25,10 @@
   //For the message
   > .error-content {
     display: block;
-    margin-left: 190px;
+    margin-right: 190px;
 
     @include media-breakpoint-down(sm) {
-      margin-left: 0;
+      margin-right: 0;
     }
 
     > h3 {

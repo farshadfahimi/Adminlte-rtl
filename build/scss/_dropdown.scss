@@ -29,7 +29,7 @@
 
 .dropdown-icon {
   &::after {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -58,15 +58,15 @@
   position: relative;
 
   & > a::after {
-    @include caret-right ();
-    float: right;
-    margin-left: .5rem;
+    @include caret-left ();
+    float: left;
+    margin-right: .5rem;
     margin-top: .5rem;
   }
 
   & > .dropdown-menu {
-    left: 100%;
-    margin-left: 0;
+    right: 100%;
+    margin-right: 0;
     margin-top: 0;
     top: 0;
   }
@@ -153,21 +153,21 @@
     position: relative;
     > .dropdown-menu {
       position: absolute;
-      right: 0;
-      left: auto;
+      left: 0;
+      right: auto;
     }
   }
 }
 
 @include media-breakpoint-down(sm) {
   .navbar-custom-menu > .navbar-nav {
-    float: right;
+    float: left;
     > li {
       position: static;
       > .dropdown-menu {
         position: absolute;
-        right: 5%;
-        left: auto;
+        left: 5%;
+        right: auto;
         border: 1px solid #ddd;
         background-color: $white;
       }
@@ -257,14 +257,14 @@
     @include media-breakpoint-up(sm) {
       float: none;
       line-height: 10px;
-      margin-right: .4rem;
+      margin-left: .4rem;
       margin-top: -8px;
     }
 
     border-radius: 50%;
-    float: left;
+    float: right;
     height: $sidebar-user-image-width;
-    margin-right: 10px;
+    margin-left: 10px;
     margin-top: -2px;
     width: $sidebar-user-image-width;
   }

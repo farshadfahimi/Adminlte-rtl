@@ -59,7 +59,7 @@
   background-color: $direct-chat-default-msg-bg;
   border: 1px solid $direct-chat-default-msg-border-color;
   color: $direct-chat-default-font-color;
-  margin: 5px 0 0 50px;
+  margin: 5px 50px 0 0;
   padding: 5px 10px;
   position: relative;
 
@@ -67,12 +67,12 @@
   &::after,
   &::before {
     border: solid transparent;
-    border-right-color: $direct-chat-default-msg-border-color;
+    border-left-color: $direct-chat-default-msg-border-color;
     content: " ";
     height: 0;
     pointer-events: none;
     position: absolute;
-    right: 100%;
+    left: 100%;
     top: 15px;
     width: 0;
   }
@@ -87,28 +87,28 @@
     margin-top: -6px;
   }
 
-  .right & {
-    margin-left: 0;
-    margin-right: 50px;
+  .left & {
+    margin-right: 0;
+    margin-left: 50px;
 
     &::after,
     &::before {
-      border-left-color: $direct-chat-default-msg-border-color;
-      border-right-color: transparent;
-      left: 100%;
-      right: auto;
+      border-right-color: $direct-chat-default-msg-border-color;
+      border-left-color: transparent;
+      right: 100%;
+      left: auto;
     }
   }
 }
 
 .direct-chat-img {
   @include border-radius(50%);
-  float: left;
+  float: right;
   height: 40px;
   width: 40px;
 
-  .right & {
-    float: right;
+  .left & {
+    float: left;
   }
 }
 
@@ -163,6 +163,7 @@
 
 //Contacts list -- for displaying contacts in direct chat contacts pane
 .contacts-list {
+  padding-right: 0;
   @include list-unstyled ();
 
   > li {
@@ -179,13 +180,13 @@
 
 .contacts-list-img {
   @include border-radius(50%);
-  float: left;
+  float: right;
   width: 40px;
 }
 
 .contacts-list-info {
   color: $white;
-  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .contacts-list-name,

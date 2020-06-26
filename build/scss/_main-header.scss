@@ -33,15 +33,15 @@
       margin: 0;
     }
 
-    &[class*="-right"] {
+    &[class*="-left"] {
       .dropdown-menu {
-        left: auto;
+        right: auto;
         margin-top: -3px;
-        right: 0;
+        left: 0;
 
         @media (max-width: breakpoint-max(xs)) {
-          left: 0;
-          right: auto;
+          right: 0;
+          left: auto;
         }
       }
     }
@@ -60,20 +60,20 @@
   font-weight: 300;
   padding: 2px 4px;
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 9px;
 }
 
 .btn-navbar {
   background-color: transparent;
-  border-left-width: 0;
+  border-right-width: 0;
 }
 
 .form-control-navbar {
-  border-right-width: 0;
+  border-left-width: 0;
 
   & + .input-group-append {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 

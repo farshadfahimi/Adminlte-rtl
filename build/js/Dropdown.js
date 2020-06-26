@@ -21,7 +21,7 @@ const SELECTOR_DROPDOWN_MENU = '.dropdown-menu'
 const SELECTOR_DROPDOWN_MENU_ACTIVE = '.dropdown-menu.show'
 const SELECTOR_DROPDOWN_TOGGLE = '[data-toggle="dropdown"]'
 
-const CLASS_NAME_DROPDOWN_RIGHT = 'dropdown-menu-right'
+const CLASS_NAME_DROPDOWN_LEFT = 'dropdown-menu-left'
 
 // TODO: this is unused; should be removed along with the extend?
 const Default = {
@@ -59,31 +59,31 @@ class Dropdown {
       return
     }
 
-    if ($element.hasClass(CLASS_NAME_DROPDOWN_RIGHT)) {
+    if ($element.hasClass(CLASS_NAME_DROPDOWN_LEFT)) {
       $element.css({
-        left: 'inherit',
-        right: 0
+        right: 'inherit',
+        left: 0
       })
     } else {
       $element.css({
-        left: 0,
-        right: 'inherit'
+        right: 0,
+        left: 'inherit'
       })
     }
 
     const offset = $element.offset()
     const width = $element.width()
-    const visiblePart = $(window).width() - offset.left
+    const visiblePart = $(window).width() - offset.right
 
-    if (offset.left < 0) {
+    if (offset.right < 0) {
       $element.css({
-        left: 'inherit',
-        right: offset.left - 5
+        right: 'inherit',
+        left: offset.right - 5
       })
     } else if (visiblePart < width) {
       $element.css({
-        left: 'inherit',
-        right: 0
+        right: 'inherit',
+        left: 0
       })
     }
   }

@@ -37,20 +37,20 @@
   }
 
   & .select2-selection--single .select2-selection__rendered {
-    padding-left: 0;
-    //padding-right: 0;
+    padding-right: 0;
+    //padding-left: 0;
     height: auto;
     margin-top: -3px;
   }
 
   &[dir="rtl"] .select2-selection--single .select2-selection__rendered {
-    padding-right: 6px;
-    padding-left: 20px;
+    padding-left: 6px;
+    padding-right: 20px;
   }
 
   & .select2-selection--single .select2-selection__arrow {
     height: 31px;
-    right: 6px;
+    left: 6px;
   }
 
   & .select2-selection--single .select2-selection__arrow b {
@@ -128,7 +128,7 @@
 
         li:first-child.select2-search.select2-search--inline {
           width: 100%;
-          margin-left: $input-padding-x / 2;
+          margin-right: $input-padding-x / 2;
 
           .select2-search__field {
             width: 100% !important;
@@ -154,9 +154,9 @@
 
       .select2-selection__choice__remove {
         color: rgba(255, 255, 255, 0.7);
-        float: right;
-        margin-left: 5px;
-        margin-right: -2px;
+        float: left;
+        margin-right: 5px;
+        margin-left: -2px;
 
         &:hover {
           color: $white;
@@ -190,20 +190,20 @@
   }
 
   & .select2-selection--single .select2-selection__rendered li {
-    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .input-group-prepend ~ & {
     .select2-selection {
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 
   .input-group > &:not(:last-child) {
     .select2-selection {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
   }
 }
@@ -245,7 +245,7 @@ select.form-control-sm ~ {
         margin-top: -($input-padding-x-sm / 5);
 
         li:first-child.select2-search.select2-search--inline {
-          margin-left: $input-padding-x-sm / 2;
+          margin-right: $input-padding-x-sm / 2;
         }
 
         .select2-search.select2-search--inline {

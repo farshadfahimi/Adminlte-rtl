@@ -2,20 +2,9 @@
 // Component: Toasts
 //
 
-.toasts-top-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: $zindex-toasts;
-
-  &.fixed {
-    position: fixed;
-  }
-}
-
 .toasts-top-left {
-  left: 0;
   position: absolute;
+  left: 0;
   top: 0;
   z-index: $zindex-toasts;
 
@@ -24,10 +13,10 @@
   }
 }
 
-.toasts-bottom-right {
-  bottom: 0;
-  position: absolute;
+.toasts-top-right {
   right: 0;
+  position: absolute;
+  top: 0;
   z-index: $zindex-toasts;
 
   &.fixed {
@@ -37,7 +26,18 @@
 
 .toasts-bottom-left {
   bottom: 0;
+  position: absolute;
   left: 0;
+  z-index: $zindex-toasts;
+
+  &.fixed {
+    position: fixed;
+  }
+}
+
+.toasts-bottom-right {
+  bottom: 0;
+  right: 0;
   position: absolute;
   z-index: $zindex-toasts;
 

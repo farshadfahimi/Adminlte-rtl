@@ -23,12 +23,12 @@
 // Vertical Tabs
 .nav-tabs.flex-column {
   border-bottom: 0;
-  border-right: $nav-tabs-border-width solid $nav-tabs-border-color;
+  border-left: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-link {
-    border-bottom-left-radius: $nav-tabs-border-radius;
-    border-top-right-radius: 0;
-    margin-right: -$nav-tabs-border-width;
+    border-bottom-right-radius: $nav-tabs-border-radius;
+    border-top-left-radius: 0;
+    margin-left: -$nav-tabs-border-width;
 
     @include hover-focus () {
       border-color: $gray-200 transparent $gray-200 $gray-200;
@@ -40,16 +40,16 @@
     border-color: $gray-300 transparent $gray-300 $gray-300;
   }
 
-  &.nav-tabs-right {
-    border-left: $nav-tabs-border-width solid $nav-tabs-border-color;
-    border-right: 0;
+  &.nav-tabs-left {
+    border-right: $nav-tabs-border-width solid $nav-tabs-border-color;
+    border-left: 0;
 
     .nav-link {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: $nav-tabs-border-radius;
-      border-top-left-radius: 0;
-      border-top-right-radius: $nav-tabs-border-radius;
-      margin-left: -$nav-tabs-border-width;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: $nav-tabs-border-radius;
+      border-top-right-radius: 0;
+      border-top-left-radius: $nav-tabs-border-radius;
+      margin-right: -$nav-tabs-border-width;
 
       @include hover-focus () {
         border-color: $gray-200 $gray-200 $gray-200 transparent;
@@ -67,8 +67,8 @@
   flex-direction: row;
 
   .nav-link {
-    padding-left: $navbar-nav-link-padding-x;
     padding-right: $navbar-nav-link-padding-x;
+    padding-left: $navbar-nav-link-padding-x;
   }
 
   .dropdown-menu {

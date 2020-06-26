@@ -29,7 +29,7 @@ body,
     }
 
     & .main-sidebar {
-      left: inherit;
+      right: inherit;
     }
   }
 
@@ -156,9 +156,9 @@ body,
     }
 
     .main-header {
-      left: 0;
-      position: fixed;
       right: 0;
+      position: fixed;
+      left: 0;
       top: 0;
       z-index: $zindex-main-header - 1;
     }
@@ -286,9 +286,9 @@ body,
         }
 
         .main-header {
-          left: 0;
-          position: fixed;
           right: 0;
+          position: fixed;
+          left: 0;
           top: 0;
           z-index: $zindex-main-sidebar - 1;
         }
@@ -350,9 +350,9 @@ body,
 
     .main-footer {
       bottom: 0;
-      left: 0;
-      position: fixed;
       right: 0;
+      position: fixed;
+      left: 0;
       z-index: $zindex-main-footer;
     }
   }
@@ -377,9 +377,9 @@ body,
 
         .main-footer {
           bottom: 0;
-          left: 0;
-          position: fixed;
           right: 0;
+          position: fixed;
+          left: 0;
           z-index: $zindex-main-footer;
         }
 
@@ -397,12 +397,12 @@ body,
   }
 
   .layout-top-nav & {
-    margin-left: 0;
+    margin-right: 0;
 
     .main-header {
       .brand-image {
         margin-top: -.5rem;
-        margin-right: .2rem;
+        margin-left: .2rem;
         height: 33px;
       }
     }
@@ -415,7 +415,7 @@ body,
     & .content-wrapper,
     & .main-header,
     & .main-footer {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -427,7 +427,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) {
   .main-header {
     &,
     &::before {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -437,19 +437,19 @@ body:not(.sidebar-mini-md) {
   .main-footer,
   .main-header {
     @include media-breakpoint-up(md) {
-      @include transition(margin-left $transition-speed $transition-fn);
+      @include transition(margin-right $transition-speed $transition-fn);
 
-      margin-left: $sidebar-width;
+      margin-right: $sidebar-width;
 
       .sidebar-collapse & {
-        margin-left: 0;
+        margin-right: 0;
       }
     }
 
     @include media-breakpoint-down(md) {
       &,
       &::before {
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -460,19 +460,19 @@ body:not(.sidebar-mini-md) {
   .main-footer,
   .main-header {
     @include media-breakpoint-up(md) {
-      @include transition(margin-left $transition-speed $transition-fn);
+      @include transition(margin-right $transition-speed $transition-fn);
 
-      margin-left: $sidebar-width;
+      margin-right: $sidebar-width;
 
       .sidebar-collapse & {
-        margin-left: $sidebar-mini-width;
+        margin-right: $sidebar-mini-width;
       }
     }
 
     @include media-breakpoint-down(md) {
       &,
       &::before {
-        margin-left: $sidebar-mini-width;
+        margin-right: $sidebar-mini-width;
       }
     }
   }
@@ -489,7 +489,7 @@ body:not(.sidebar-mini-md) {
 .main-sidebar {
   &,
   &::before {
-    $local-sidebar-transition: margin-left $transition-speed $transition-fn, width $transition-speed $transition-fn;
+    $local-sidebar-transition: margin-right $transition-speed $transition-fn, width $transition-speed $transition-fn;
     @include transition($local-sidebar-transition);
     width: $sidebar-width;
   }
@@ -504,7 +504,7 @@ body:not(.sidebar-mini-md) {
   .sidebar-collapse & {
     &,
     &::before {
-      margin-left: -$sidebar-width;
+      margin-right: -$sidebar-width;
     }
 
     .nav-sidebar.nav-child-indent .nav-treeview {
@@ -516,13 +516,13 @@ body:not(.sidebar-mini-md) {
     &,
     &::before {
       box-shadow: none !important;
-      margin-left: -$sidebar-width;
+      margin-right: -$sidebar-width;
     }
 
     .sidebar-open & {
       &,
       &::before {
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -546,7 +546,7 @@ body:not(.sidebar-mini-md) {
     bottom: 0;
     float: none;
     height: 100vh;
-    left: 0;
+    right: 0;
     position: fixed;
     top: 0;
   }

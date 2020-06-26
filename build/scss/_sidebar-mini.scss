@@ -10,12 +10,12 @@
   visibility: visible;
 
   &.brand-image-xs {
-    left: 18px;
+    right: 18px;
     top: 12px;
   }
 
   &.brand-image-xl {
-    left: 12px;
+    right: 12px;
     top: 6px;
   }
 }
@@ -25,7 +25,7 @@
   visibility: hidden;
 
   &.brand-image-xl {
-    left: 16px;
+    right: 16px;
     top: 8px;
   }
 }
@@ -120,13 +120,13 @@
     }
 
     .nav-sidebar.nav-child-indent .nav-treeview {
-      padding-left: 0;
+      padding-right: 0;
     }
 
     .brand-text,
     .user-panel > .info,
     .nav-sidebar .nav-link p {
-      margin-left: -10px;
+      margin-right: -10px;
       animation-name: fadeOut;
       animation-duration: $transition-speed;
       animation-fill-mode: both;
@@ -135,7 +135,7 @@
     }
 
     .nav-sidebar > .nav-item .nav-icon {
-      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
@@ -157,10 +157,10 @@
 .nav-sidebar .nav-item > .nav-link {
   position: relative;
 
-  > .float-right {
+  > .float-left {
     margin-top: -7px;
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 50%;
   }
 }
@@ -170,5 +170,5 @@
 .main-sidebar .logo-xs,
 .main-sidebar .logo-xl,
 .sidebar .user-panel .info {
-  @include transition(margin-left $transition-speed linear, opacity $transition-speed ease, visibility $transition-speed ease);
+  @include transition(margin-right $transition-speed linear, opacity $transition-speed ease, visibility $transition-speed ease);
 }

@@ -7,7 +7,7 @@
     position: relative;
 
     .form-control {
-      padding-right: 35px;
+      padding-left: 35px;
     }
 
     .form-icon {
@@ -18,7 +18,7 @@
       // margin-top: -3px;
       padding: $input-btn-padding-y $input-btn-padding-x;
       position: absolute;
-      right: 3px;
+      left: 3px;
       top: 0;
     }
   }
@@ -123,10 +123,10 @@ label:not(.form-check-label):not(.custom-file-label) {
     border-color: theme-color("warning");
 
     @if $enable-validation-icons {
-      // padding-right: $input-height-inner;
+      // padding-left: $input-height-inner;
       // background-image: none;
       // background-repeat: no-repeat;
-      // background-position: center right $input-height-inner-quarter;
+      // background-position: center left $input-height-inner-quarter;
       // background-size: $input-height-inner-half $input-height-inner-half;
     }
 
@@ -146,8 +146,8 @@ label:not(.form-check-label):not(.custom-file-label) {
 textarea.form-control {
   &.is-warning {
     @if $enable-validation-icons {
-      padding-right: $input-height-inner;
-      background-position: top $input-height-inner-quarter right $input-height-inner-quarter;
+      padding-left: $input-height-inner;
+      background-position: top $input-height-inner-quarter left $input-height-inner-quarter;
     }
   }
 }
@@ -157,7 +157,7 @@ textarea.form-control {
     border-color: theme-color("warning");
 
     @if $enable-validation-icons {
-      // padding-right: $custom-select-feedback-icon-padding-right;
+      // padding-left: $custom-select-feedback-icon-padding-left;
       // background: $custom-select-background, none $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
     }
 

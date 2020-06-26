@@ -16,9 +16,9 @@ html.control-sidebar-animate {
   &::before {
     bottom: $main-footer-height;
     display: none;
-    right: -$control-sidebar-width;
+    left: -$control-sidebar-width;
     width: $control-sidebar-width;
-    @include transition(right $transition-speed $transition-fn, display $transition-speed $transition-fn);
+    @include transition(left $transition-speed $transition-fn, display $transition-speed $transition-fn);
   }
 
   &::before {
@@ -48,7 +48,7 @@ body.text-sm {
 .control-sidebar-push-slide {
   .content-wrapper,
   .main-footer {
-    @include transition(margin-right $transition-speed $transition-fn);
+    @include transition(margin-left $transition-speed $transition-fn);
   }
 }
 
@@ -59,7 +59,7 @@ body.text-sm {
 
     &,
     &::before {
-      right: 0;
+      left: 0;
     }
   }
 
@@ -67,7 +67,7 @@ body.text-sm {
   &.control-sidebar-push-slide {
     .content-wrapper,
     .main-footer {
-      margin-right: $control-sidebar-width;
+      margin-left: $control-sidebar-width;
     }
   }
 }
@@ -79,8 +79,8 @@ body.text-sm {
 
     &,
     &::before {
-      right: 0;
-      @include transition(right $transition-speed $transition-fn, display $transition-speed $transition-fn);
+      left: 0;
+      @include transition(left $transition-speed $transition-fn, display $transition-speed $transition-fn);
     }
   }
 
@@ -88,7 +88,7 @@ body.text-sm {
   &.control-sidebar-push-slide {
     .content-wrapper,
     .main-footer {
-      margin-right: $control-sidebar-width;
+      margin-left: $control-sidebar-width;
     }
   }
 }
@@ -147,7 +147,7 @@ body.text-sm {
       &:focus,
       &.active {
         border-bottom-color: transparent;
-        border-left-color: transparent;
+        border-right-color: transparent;
         border-top-color: transparent;
         color: $sidebar-dark-hover-color;
       }
@@ -169,5 +169,5 @@ body.text-sm {
 
   //  Background
   background-color: $sidebar-light-bg;
-  border-left: $main-header-bottom-border;
+  border-right: $main-header-bottom-border;
 }

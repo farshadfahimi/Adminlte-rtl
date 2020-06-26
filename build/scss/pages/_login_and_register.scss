@@ -43,7 +43,7 @@
 
   .input-group {
     .form-control {
-      border-right: 0;
+      border-left: 0;
 
       &:focus {
         box-shadow: none;
@@ -76,9 +76,9 @@
 
     .input-group-text {
       background-color: transparent;
-      border-bottom-right-radius: $border-radius;
-      border-left: 0;
-      border-top-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      border-right: 0;
+      border-top-left-radius: $border-radius;
       color: #777;
       transition: $input-transition;
     }

@@ -19,7 +19,7 @@ $bootstrap-switch-handle-border-radius: .1rem;
   line-height: .5rem;
   overflow: hidden;
   position: relative;
-  text-align: left;
+  text-align: right;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   user-select: none;
   vertical-align: middle;
@@ -76,19 +76,19 @@ $bootstrap-switch-handle-border-radius: .1rem;
   }
 
   .bootstrap-switch-handle-on {
-    border-bottom-left-radius: $bootstrap-switch-handle-border-radius;
-    border-top-left-radius: $bootstrap-switch-handle-border-radius;
+    border-bottom-right-radius: $bootstrap-switch-handle-border-radius;
+    border-top-right-radius: $bootstrap-switch-handle-border-radius;
   }
 
   .bootstrap-switch-handle-off {
-    border-bottom-right-radius: $bootstrap-switch-handle-border-radius;
-    border-top-right-radius: $bootstrap-switch-handle-border-radius;
+    border-bottom-left-radius: $bootstrap-switch-handle-border-radius;
+    border-top-left-radius: $bootstrap-switch-handle-border-radius;
   }
 
   input[type='radio'],
   input[type='checkbox'] {
     filter: alpha(opacity=0);
-    left: 0;
+    right: 0;
     margin: 0;
     opacity: 0;
     position: absolute;
@@ -142,7 +142,7 @@ $bootstrap-switch-handle-border-radius: .1rem;
   }
 
   &.bootstrap-switch-animate .bootstrap-switch-container {
-    transition: margin-left .5s;
+    transition: margin-right .5s;
   }
 
   &.bootstrap-switch-inverse {
@@ -163,13 +163,13 @@ $bootstrap-switch-handle-border-radius: .1rem;
 
   &.bootstrap-switch-on .bootstrap-switch-label,
   &.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
-    border-bottom-right-radius: $bootstrap-switch-handle-border-radius;
-    border-top-right-radius: $bootstrap-switch-handle-border-radius;
+    border-bottom-left-radius: $bootstrap-switch-handle-border-radius;
+    border-top-left-radius: $bootstrap-switch-handle-border-radius;
   }
 
   &.bootstrap-switch-off .bootstrap-switch-label,
   &.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
-    border-bottom-left-radius: $bootstrap-switch-handle-border-radius;
-    border-top-left-radius: $bootstrap-switch-handle-border-radius;
+    border-bottom-right-radius: $bootstrap-switch-handle-border-radius;
+    border-top-right-radius: $bootstrap-switch-handle-border-radius;
   }
 }

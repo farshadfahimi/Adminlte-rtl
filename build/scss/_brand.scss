@@ -31,17 +31,17 @@
   }
 
   .brand-image {
-    float: left;
+    float: right;
     line-height: .8;
-    margin-left: .8rem;
-    margin-right: .5rem;
+    margin-right: .8rem;
+    margin-left: .5rem;
     margin-top: -3px;
     max-height: 33px;
     width: auto;
   }
 
   .brand-image-xs {
-    float: left;
+    float: right;
     line-height: .8;
     margin-top: -.1rem;
     max-height: 33px;
@@ -63,7 +63,7 @@
     .brand-image {
       height: 29px;
       margin-bottom: -.25rem;
-      margin-left: .95rem;
+      margin-right: .95rem;
       margin-top: -.25rem;
     }
 

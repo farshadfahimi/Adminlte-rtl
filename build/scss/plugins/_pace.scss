@@ -129,8 +129,8 @@
 
 
       .pace-activity::before {
-          border-right-color: rgba($color, .2);
           border-left-color: rgba($color, .2);
+          border-right-color: rgba($color, .2);
       }
 
       .pace-activity::after {
@@ -140,7 +140,7 @@
     }
   }
 
-  .pace-fill-left-#{$name} {
+  .pace-fill-right-#{$name} {
     .pace {
       .pace-progress {
         background-color: rgba($color, 0.19999999999999996);
@@ -160,7 +160,7 @@
 
       .pace-activity {
         border-top-color: $color;
-        border-left-color: $color;
+        border-right-color: $color;
       }
     }
   }
