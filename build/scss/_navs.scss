@@ -2,6 +2,10 @@
 // Component: Nav
 //
 
+ul.nav{
+  padding-right: 0;
+}
+
 .nav-pills {
   .nav-link {
     color: $gray-600;

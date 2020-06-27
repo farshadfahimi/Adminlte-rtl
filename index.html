@@ -57,25 +57,26 @@
     </form>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mr-auto">
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
+              <div class="media-body text-right">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  <span class="float-left text-sm text-danger"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                <p class="text-sm text-muted"><i class="far fa-clock ml-1"></i> 4 Hours Ago</p>
               </div>
             </div>
             <!-- Message End -->
@@ -84,11 +85,11 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body text-right">
                 <h3 class="dropdown-item-title">
                   John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  <span class="float-left text-sm text-muted"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">I got your message bro</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
@@ -100,11 +101,11 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body text-right">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  <span class="float-left text-sm text-warning"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">The subject goes here</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
@@ -122,22 +123,22 @@
           <i class="far fa-bell"></i>
           <span class="badge badge-warning navbar-badge">15</span>
         </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
           <span class="dropdown-item dropdown-header">15 Notifications</span>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
+          <a href="#" class="dropdown-item text-right">
+            <i class="fas fa-envelope ml-2"></i> 4 new messages
+            <span class="float-left text-muted text-sm">3 mins</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
+          <a href="#" class="dropdown-item text-right">
+            <i class="fas fa-users ml-2"></i> 8 friend requests
+            <span class="float-left text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
+          <a href="#" class="dropdown-item text-right">
+            <i class="fas fa-file ml-2"></i> 3 new reports
+            <span class="float-left text-muted text-sm">2 days</span>
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
@@ -174,7 +175,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column pr-0" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
@@ -182,7 +183,7 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                <i class="right fas fa-angle-left"></i>
+                <i class="left fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -211,7 +212,7 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
-                <span class="right badge badge-danger">New</span>
+                <span class="left badge badge-danger">New</span>
               </p>
             </a>
           </li>
@@ -220,8 +221,8 @@
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
+                <i class="left fas fa-angle-left"></i>
+                <span class="left badge badge-info">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -274,7 +275,7 @@
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Charts
-                <i class="right fas fa-angle-left"></i>
+                <i class="left fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -303,7 +304,7 @@
               <i class="nav-icon fas fa-tree"></i>
               <p>
                 UI Elements
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -362,7 +363,7 @@
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Forms
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -397,7 +398,7 @@
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Tables
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -427,7 +428,7 @@
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Calendar
-                <span class="badge badge-info right">2</span>
+                <span class="badge badge-info left">2</span>
               </p>
             </a>
           </li>
@@ -444,7 +445,7 @@
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Mailbox
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -473,7 +474,7 @@
               <i class="nav-icon fas fa-book"></i>
               <p>
                 Pages
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -532,7 +533,7 @@
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Extras
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-angle-left left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -629,7 +630,7 @@
               <i class="nav-icon fas fa-circle"></i>
               <p>
                 Level 1
-                <i class="right fas fa-angle-left"></i>
+                <i class="left fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -644,7 +645,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Level 2
-                    <i class="right fas fa-angle-left"></i>
+                    <i class="left fas fa-angle-left"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
@@ -857,8 +858,8 @@
                   <!-- Message. Default to the left -->
                   <div class="direct-chat-msg">
                     <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
+                      <span class="direct-chat-name float-right">Alexander Pierce</span>
+                      <span class="direct-chat-timestamp float-left">23 Jan 2:00 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
                     <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
@@ -871,10 +872,10 @@
                   <!-- /.direct-chat-msg -->
 
                   <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
+                  <div class="direct-chat-msg left">
                     <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
+                      <span class="direct-chat-name float-left">Sarah Bullock</span>
+                      <span class="direct-chat-timestamp float-right">23 Jan 2:05 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
                     <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
@@ -889,8 +890,8 @@
                   <!-- Message. Default to the left -->
                   <div class="direct-chat-msg">
                     <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
+                      <span class="direct-chat-name float-right">Alexander Pierce</span>
+                      <span class="direct-chat-timestamp float-left">23 Jan 5:37 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
                     <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
@@ -903,10 +904,10 @@
                   <!-- /.direct-chat-msg -->
 
                   <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
+                  <div class="direct-chat-msg left">
                     <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
+                      <span class="direct-chat-name float-left">Sarah Bullock</span>
+                      <span class="direct-chat-timestamp float-right">23 Jan 6:10 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
                     <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
@@ -931,7 +932,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             Count Dracula
-                            <small class="contacts-list-date float-right">2/28/2015</small>
+                            <small class="contacts-list-date float-left">2/28/2015</small>
                           </span>
                           <span class="contacts-list-msg">How have you been? I was...</span>
                         </div>
@@ -946,7 +947,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             Sarah Doe
-                            <small class="contacts-list-date float-right">2/23/2015</small>
+                            <small class="contacts-list-date float-left">2/23/2015</small>
                           </span>
                           <span class="contacts-list-msg">I will be waiting for...</span>
                         </div>
@@ -961,7 +962,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             Nadia Jolie
-                            <small class="contacts-list-date float-right">2/20/2015</small>
+                            <small class="contacts-list-date float-left">2/20/2015</small>
                           </span>
                           <span class="contacts-list-msg">I'll call you back at...</span>
                         </div>
@@ -976,7 +977,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             Nora S. Vans
-                            <small class="contacts-list-date float-right">2/10/2015</small>
+                            <small class="contacts-list-date float-left">2/10/2015</small>
                           </span>
                           <span class="contacts-list-msg">Where is your new...</span>
                         </div>
@@ -991,7 +992,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             John K.
-                            <small class="contacts-list-date float-right">1/27/2015</small>
+                            <small class="contacts-list-date float-left">1/27/2015</small>
                           </span>
                           <span class="contacts-list-msg">Can I take a look at...</span>
                         </div>
@@ -1006,7 +1007,7 @@
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
                             Kenneth M.
-                            <small class="contacts-list-date float-right">1/4/2015</small>
+                            <small class="contacts-list-date float-left">1/4/2015</small>
                           </span>
                           <span class="contacts-list-msg">Never mind I found...</span>
                         </div>

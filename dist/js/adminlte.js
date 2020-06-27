@@ -1,6 +1,6 @@
 /*!
  * AdminLTE v3.1.0-pre (https://adminlte.io)
- * Copyleft 2014-2020 Colorlib <https://colorlib.com>
+ * Copyright 2014-2020 Colorlib <https://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
  */
 (function (global, factory) {
@@ -751,7 +751,7 @@
   var SELECTOR_DROPDOWN_MENU = '.dropdown-menu';
   var SELECTOR_DROPDOWN_MENU_ACTIVE = '.dropdown-menu.show';
   var SELECTOR_DROPDOWN_TOGGLE = '[data-toggle="dropdown"]';
-  var CLASS_NAME_DROPDOWN_left = 'dropdown-menu-left'; // TODO: this is unused; should be removed along with the extend?
+  var CLASS_NAME_DROPDOWN_LEFT = 'dropdown-menu-left'; // TODO: this is unused; should be removed along with the extend?
 
   var Default$3 = {};
   /**
@@ -787,7 +787,7 @@
         return;
       }
 
-      if ($element.hasClass(CLASS_NAME_DROPDOWN_left)) {
+      if ($element.hasClass(CLASS_NAME_DROPDOWN_LEFT)) {
         $element.css({
           right: 'inherit',
           left: 0
@@ -1454,20 +1454,20 @@
   var EVENT_INIT = "init" + EVENT_KEY$6;
   var EVENT_CREATED = "created" + EVENT_KEY$6;
   var EVENT_REMOVED$1 = "removed" + EVENT_KEY$6;
-  var SELECTOR_CONTAINER_TOP_left = '#toastsContainerTopleft';
-  var SELECTOR_CONTAINER_TOP_right = '#toastsContainerTopright';
-  var SELECTOR_CONTAINER_BOTTOM_left = '#toastsContainerBottomleft';
-  var SELECTOR_CONTAINER_BOTTOM_right = '#toastsContainerBottomright';
-  var CLASS_NAME_TOP_left = 'toasts-top-left';
-  var CLASS_NAME_TOP_right = 'toasts-top-right';
-  var CLASS_NAME_BOTTOM_left = 'toasts-bottom-left';
-  var CLASS_NAME_BOTTOM_right = 'toasts-bottom-right';
-  var POSITION_TOP_left = 'topleft';
-  var POSITION_TOP_right = 'topright';
-  var POSITION_BOTTOM_left = 'bottomleft';
-  var POSITION_BOTTOM_right = 'bottomright';
+  var SELECTOR_CONTAINER_TOP_LEFT = '#toastsContainerTopleft';
+  var SELECTOR_CONTAINER_TOP_RIGHT = '#toastsContainerTopright';
+  var SELECTOR_CONTAINER_BOTTOM_LEFT = '#toastsContainerBottomleft';
+  var SELECTOR_CONTAINER_BOTTOM_RIGHT = '#TOASTSCONTAINERBOTTOMRIGHt';
+  var CLASS_NAME_TOP_LEFT = 'toasts-top-left';
+  var CLASS_NAME_TOP_RIGHT = 'toasts-top-right';
+  var CLASS_NAME_BOTTOM_LEFT = 'toasts-bottom-left';
+  var CLASS_NAME_BOTTOM_RIGHT = 'toasts-bottom-right';
+  var POSITION_TOP_LEFT = 'TOPLEft';
+  var POSITION_TOP_RIGHT = 'TOPRight';
+  var POSITION_BOTTOM_LEFT = 'bottomleft';
+  var POSITION_BOTTOM_RIGHT = 'bottomright';
   var Default$6 = {
-    position: POSITION_TOP_left,
+    position: POSITION_TOP_LEFT,
     fixed: true,
     autohide: false,
     autoremove: true,
@@ -1568,20 +1568,20 @@
     ;
 
     _proto._getContainerId = function _getContainerId() {
-      if (this._config.position == POSITION_TOP_left) {
-        return SELECTOR_CONTAINER_TOP_left;
+      if (this._config.position == POSITION_TOP_LEFT) {
+        return SELECTOR_CONTAINER_TOP_LEFT;
       }
 
-      if (this._config.position == POSITION_TOP_right) {
-        return SELECTOR_CONTAINER_TOP_right;
+      if (this._config.position == POSITION_TOP_RIGHT) {
+        return SELECTOR_CONTAINER_TOP_RIGHT;
       }
 
-      if (this._config.position == POSITION_BOTTOM_left) {
-        return SELECTOR_CONTAINER_BOTTOM_left;
+      if (this._config.position == POSITION_BOTTOM_LEFT) {
+        return SELECTOR_CONTAINER_BOTTOM_LEFT;
       }
 
-      if (this._config.position == POSITION_BOTTOM_right) {
-        return SELECTOR_CONTAINER_BOTTOM_right;
+      if (this._config.position == POSITION_BOTTOM_RIGHT) {
+        return SELECTOR_CONTAINER_BOTTOM_RIGHT;
       }
     };
 
@@ -1589,14 +1589,14 @@
       if ($(this._getContainerId()).length === 0) {
         var container = $('<div />').attr('id', this._getContainerId().replace('#', ''));
 
-        if (this._config.position == POSITION_TOP_left) {
-          container.addClass(CLASS_NAME_TOP_left);
-        } else if (this._config.position == POSITION_TOP_right) {
-          container.addClass(CLASS_NAME_TOP_right);
-        } else if (this._config.position == POSITION_BOTTOM_left) {
-          container.addClass(CLASS_NAME_BOTTOM_left);
-        } else if (this._config.position == POSITION_BOTTOM_right) {
-          container.addClass(CLASS_NAME_BOTTOM_right);
+        if (this._config.position == POSITION_TOP_LEFT) {
+          container.addClass(CLASS_NAME_TOP_LEFT);
+        } else if (this._config.position == POSITION_TOP_RIGHT) {
+          container.addClass(CLASS_NAME_TOP_RIGHT);
+        } else if (this._config.position == POSITION_BOTTOM_LEFT) {
+          container.addClass(CLASS_NAME_BOTTOM_LEFT);
+        } else if (this._config.position == POSITION_BOTTOM_RIGHT) {
+          container.addClass(CLASS_NAME_BOTTOM_RIGHT);
         }
 
         $('body').append(container);

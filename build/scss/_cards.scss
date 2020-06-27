@@ -311,6 +311,7 @@ html.maximized-card {
 
 .chart-legend {
   @include list-unstyled ();
+  padding-right: 0;
   margin: 10px 0;
 
   > li {
