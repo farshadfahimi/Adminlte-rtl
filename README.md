@@ -7,7 +7,7 @@
 **AdminLTE** is a fully responsive administration template. Based on **[Bootstrap 4.4](https://getbootstrap.com/)** framework and also the JS/jQuery plugin.
 Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops.
 
-**Preview on [AdminLTE.io](https://adminlte.io/themes/v3)**
+**Preview on [AdminLTE.io](https://adminlte.io/themes/v3)** the `ltr` VERSION   
 
 ## Looking for Premium Templates?
 
@@ -21,13 +21,14 @@ SCSS has been used to increase code customizability.
 
 ## Installation
 
-There are multiple ways to install AdminLTE.
+For now for `rtl` version you can just download it from github
+<!-- There are multiple ways to install AdminLTE. -->
 
 ### Download:
 
 Download from [GitHub releases](https://github.com/ColorlibHQ/AdminLTE/releases).
 
-### Using The Command Line:
+<!-- ### Using The Command Line:
 
 _**Important Note**: To install it via npm/Yarn, you need at least Node.js 10 or higher._
 
@@ -55,7 +56,7 @@ _**Important Note**: To install it via npm/Yarn, you need at least Node.js 10 or
 
     ```bash
     git clone https://github.com/ColorlibHQ/AdminLTE.git
-    ```
+    ``` -->
 
 ## Documentation
 
